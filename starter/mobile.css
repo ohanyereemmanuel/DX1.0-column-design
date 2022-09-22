@@ -1,0 +1,62 @@
+@media screen and (max-width:600px) {
+    /* ===== First section starts here===== */
+    .first-section {
+        height:520px;
+    }
+    .firstsection-left-div {
+        width:60%
+    }
+    .first-section-right-div {
+        width:40%;
+    }
+    .heading {
+        font-size:25px;
+    }
+    .line {
+        width:200px;
+    }
+    p {
+        font-size:16px;
+    }
+    .link-holder {
+        /* border: 3px solid blue; */
+        display:flex;
+        flex-direction:column;
+    }
+    .link-holder h4 {
+ margin-bottom:20px;
+    }
+/* ===== First section ends here===== */
+
+/* ===== Second section starts here===== */
+.secondsection-right-div {
+    margin-left:0px;
+    margin-top:30px;
+}
+
+/* ===== Second section ends here===== */
+    body {
+        
+    }
+
+
+
+    /* ===== Third section starts here===== */
+    .thirdsection{
+        background:var(--gray-color);
+        flex-direction:column-reverse;
+        align-items:center;
+    }
+    .thirdsection-left-div {
+        margin-top:30px;
+    }
+/* ===== Third section starts here===== */
+/* footer section starts here */
+.footer {
+    flex-direction:column;
+    text-align:center;
+    padding:20px 30px;
+}
+
+/* footer section ends here */
+}

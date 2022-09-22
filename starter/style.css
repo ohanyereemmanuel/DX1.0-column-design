@@ -1,0 +1,162 @@
+/* ==== Common Fix starts here==== */
+*{
+    margin:0px;
+    /* using the * which is a universal selector is to style the margin to 0px because
+    the browser automatically gives the webpage a margin of 8px */
+    box-sizing:border-box;
+    /* this is going to limit every calculation of content padding and borders to just the height of the parent element */
+}
+img {
+    width: 100%;
+    height:100%;
+}
+/* ==== Common Fix ends here==== */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* ===== First section starts here===== */
+.firstsection{
+    height:460px;
+    /* border:3px solid tomato; */
+    display:flex;
+}
+.firstsection-left-div {
+    /* border: 3px solid black; */
+    height:100%;
+    width:50%;
+    padding:20px;
+    max-width:1500px;
+    margin:0 auto;
+    /* the percent makes it inherit the height of the parent element which is 460px cos % is relative unit*/
+}
+.firstsection-right-div {
+    /* border: 3px solid blue; */
+    height:100%;
+    width:50%;
+    background:var(--linear-gradient), url("./images/image1.jpg");
+    background-size:cover;
+    background-position:bottom left;
+    max-width:1500px;
+    margin: 0 auto;
+    /* this makes our webpage to retain it's component size until it surpases 1500px but
+    would still restrict itself to the center of the page. the margin 0 is for the top and bottom while auto is for the left and right
+    margin so that when our device is viewed on larger screens it would retain quality */
+    
+}
+.link-holder {
+    /* border:3px solid blue; */
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    /* color:white; */
+    color: var(--white-color);
+    text-decoration:none;
+    padding:20px 0
+}
+.link-holder a {
+text-decoration:none;
+color:var(--white-color)
+}
+span {
+    color:var(--main-color)
+}
+
+.line {
+    background-color:var(--main-color);
+    height:16px;
+    width:224px;
+}
+.logo-text {
+    margin-bottom: 20px;
+}
+.heading {
+    margin-bottom: 20px;
+}
+.firstsection-left-div p {
+ margin-bottom:25px;
+}
+/* These two will not be in the same line because they are block level elements */
+/* but this can be corrected by introducing display flex in the parent style because flex isn't applied in the element it is written but the  */
+/* child elements */
+
+/* ===== First section ends here===== */
+
+/* ===== Second section starts here===== */
+.secondsection {
+    /* border: 3px solid tomato; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    /* this allows the widths given to the child elements to retain their widths but if there is a resize that the widths of the child elements
+    cannot be retained the child elements now have to go down and stay on top of each other  */
+    padding: 50px 0;
+    margin:0 auto;
+    max-width:1500px
+}
+.secondsection-left-div {
+    /* border: 3px solid black; */
+    width:310px;
+    height:400px;
+    background: var(--gray-color);
+    padding:40px 25px;
+    
+}
+.secondsection-left-div p {
+    margin: 10px 0;
+}
+.secondsection-right-div {
+    height:460px;
+    width:340px;
+    /* border:3px solid black; */
+    margin-left:20px;
+
+}
+
+/* ===== Second section ends here===== */
+
+
+/* ===== Third section starts here===== */
+.thirdsection {
+ display:flex;
+ justify-content: center;
+ padding: 50px 0;
+ flex-wrap:wrap;
+ /* flex-direction: row-reverse; */
+ /* this would reverse the columns or rows that come first */
+ max-width:1500px;
+ margin:0 auto;
+}
+.thirdsection-left-div,.thirdsection-right-div {
+ height:460px;
+ width:460px;
+}
+.thirdsection-left-div {
+background: url("./images/image3.jpg");
+background-size: cover;
+}
+.thirdsection-right-div {
+background-color: var(--main-color);
+padding: 30px 25px;
+}
+.thirdsection-right-div p{
+    margin:10px 0px;
+}
+/* =====footer  section starts here===== */
+
+ .footer {
+ background: var(--main-color);
+ padding:20px 0;
+ display:flex;
+ justify-content:space-evenly;
+ max-width:1500px;
+ margin:0 auto;
+ }
+ .footercontainer {
+    /* height:50px; */
+    /* width:200px; */
+ }
+ a .footericon {
+    margin: 0px,15px;
+ }
+ /* =====footer  section starts here===== */
